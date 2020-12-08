@@ -1,0 +1,9 @@
+<div *ngFor="let entry of noticeList; let i = index" style="text-align: center">
+  <div class="card">
+    <div class="card-body">
+      Date: {{ entry.date }} <br />Title: {{ entry.title }} <br />
+      Body: {{ entry.body }}<br />
+      Publication Status: {{ entry.publication_status }}
+    </div>
+  </div>
+</div>

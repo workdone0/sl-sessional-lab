@@ -1,0 +1,51 @@
+<form
+  class="row g-3"
+  #userdata="ngForm"
+  (ngSubmit)="onClickSubmit(userdata.value)"
+  style="
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+  "
+>
+  <div class="col-md-6">
+    <input
+      type="text"
+      class="form-control"
+      name="date"
+      placeholder="Date"
+      ngModel
+    />
+  </div>
+  <div class="col-md-6">
+    <input
+      type="text"
+      class="form-control"
+      name="title"
+      placeholder="Title"
+      ngModel
+    />
+  </div>
+  <div class="col-12">
+    <input
+      type="text"
+      class="form-control"
+      name="body"
+      placeholder="Body"
+      ngModel
+    />
+  </div>
+  <div class="col-12">
+    <input
+      type="text"
+      class="form-control"
+      name="status"
+      placeholder="Publication Status"
+      ngModel
+    />
+  </div>
+  <div class="col-12">
+    <button type="submit" value="submit" class="btn btn-primary">ADD</button>
+  </div>
+</form>
